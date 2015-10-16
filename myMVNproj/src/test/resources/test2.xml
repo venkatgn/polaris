@@ -1,0 +1,26 @@
+<suite name="yahoo">
+ <test name="yahoo_ff">
+ <parameter name="browser" value="firefox" />
+   <classes>
+      <class name="p3.Test_prog" />
+       <methods>
+           <include name="testing" />
+       </methods>
+   </classes>
+ </test>
+ <test name="yahoo_ie">
+ <parameter name="browser" value="ie" />
+   <classes>
+      <class name="p3.Test_prog" />
+       <methods>
+           <include name="testing" />
+       </methods>
+    </classes>
+  </test>
+  
+  <listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  </listeners> 
+ </suite>
